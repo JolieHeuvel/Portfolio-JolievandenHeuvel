@@ -453,7 +453,7 @@ h1, h2, h3, h4, .font-heading {
 
 /* Hero Section (Home Page Wireframe 01) */
 .hero-dark {
-  background-image: url('background\ hero.png');
+  background-image: url('background\ hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1329,4 +1329,56 @@ h1, h2, h3, h4, .font-heading {
    ========================================================================== */
 @media (max-width: 992px) {
   .hero-grid, .about-grid, .intro-content-grid, .contact-grid, .modal-grid {
-    grid-template-columns:
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .about-text-col h1, .contact-info-col h1, .work-page-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .fixed-footer {
+    padding: 0.8rem 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .brand-logo img {
+    height: 46px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paragraph-card {
+    padding: 1.5rem;
+  }
+}
